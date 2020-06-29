@@ -10,3 +10,8 @@ state.muted  // false
 let newState = AudioState(volume: 0.5, muted: false)
 let updatedState = try audioManager.setAudioState(newState)
 ```
+
+### Swift Package Manager.
+```swift
+.package(url: "https://github.com/Antman261/AudioManager.git", from: "0.1.0"),
+```
