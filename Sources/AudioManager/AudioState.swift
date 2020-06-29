@@ -10,14 +10,14 @@ import Foundation
 public struct AudioState {
     let volume: Float64
     let muted: Bool
-    var dictionary: [String: Any] {
+    public var dictionary: [String: Any] {
         return ["volume": volume,
                 "muted": muted]
     }
 }
 
 extension AudioState {
-    init?(json: [String : Any]) {
+    public init?(json: [String : Any]) {
         guard let volume = json["volume"] as? Float64,
             let muted = json["muted"] as? Bool
             else {
