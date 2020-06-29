@@ -13,5 +13,5 @@ let updatedState = try audioManager.setAudioState(newState)
 
 ### Swift Package Manager.
 ```swift
-.package(url: "https://github.com/Antman261/AudioManager.git", from: "0.1.0"),
+.package(url: "https://github.com/Antman261/AudioManager.git", from: "0.1.4"),
 ```
