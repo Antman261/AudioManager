@@ -10,7 +10,7 @@ import Foundation
 public class AudioManager {
     var audioController: AudioController
     
-    init() {
+    public init() {
         audioController = AudioController()
     }
     
