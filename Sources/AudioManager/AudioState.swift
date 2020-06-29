@@ -8,11 +8,16 @@
 import Foundation
 
 public struct AudioState {
-    public let volume: Float64
-    public let muted: Bool
+    let volume: Float64
+    let muted: Bool
     public var dictionary: [String: Any] {
         return ["volume": volume,
                 "muted": muted]
+    }
+    
+    public init(volume: Float64, muted: Bool) {
+        self.volume = volume
+        self.muted = muted
     }
 }
 
